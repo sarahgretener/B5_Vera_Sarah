@@ -8,19 +8,67 @@
   /* padding, margin: 0: bewirkt, dass es mit 100vh zuunterist */
   padding: 0;
   margin: 0;
+color: #084A6A;
+font-family: 'Roboto Condensed', sans-serif;
 }
 
 .header {
-  background-color: #ffd7b5;
-  height: 100px;
+  background-image: urL("../images/home.png");
+  height: 500px;
 }
 
 .content {
   flex-grow: 1;
-  background-color: #ffb38a;
+padding: 20px;
 }
 
 .footer {
-  background-color: #ff9248;
   height: 50px;
+	padding: 20px;
+	text-align: center;
+}
+
+.button1{
+  background-color: #E89B25;
+  color: white;
+  border: 2px solid #E89B25;
+	padding: 15px;
+	border-radius: 10px;
+	font-weight: 700;
+	font-size: 12pt;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+  border-right:none;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: none;
+	font-weight: 700;
+	
+}
+
+.active {
+  background-color: none;
+	font-weight: 700;
 }

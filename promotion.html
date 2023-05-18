@@ -4,17 +4,58 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TITEL_EINGEBEN</title>
-    <link rel="stylesheet" href="./common.css">
+    <title>THRIFT ME</title>
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/promotion.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+
 </head>
 
 <body class="webpage">
-    <div class="header">header</div>
+    <div class="header">
+		<ul>
+		  <li><a href="/index.html">Home</a></li>
+		  <li><a href="#aboutus">About Us</a></li>
+		  <li><a class="active" href="/promotion.html">Game</a></li>
+		</ul>
+	</div>
     <div class="content">
-        content
-    </div>
-    <div class="footer">footer</div>
+		<h1>Game</h1>
+       		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,  </p>
+			<form action="" method="POST">
+					
+				<div id="name">
+					<div>
+						<label for="fname">Vorname</label><span class="klein">Pflichtfeld</span><br>
+						<input type="text" id="fname" name="first_name" pattern="[A-Z]{1}+[a-z]{2, 29}" class="marging" required>
+					</div>
+					<div>
+						<label for="lname">Nachname</label><span class="klein">Pflichtfeld</span><br>
+						<input type="text" id="lname" name="last_name" pattern="[A-Z][a-z]{2, 29}" class="marging" required><br>
+					</div>
+				</div>
+					
+				<label for="child_name">Name Ihres Kindes</label><br>
+				<input type="text" id="child_name" name="child_name" pattern="[A-Z]{1}+[a-z]{2, 29}" class="marging"><br>
+				
+				<label for="phone_nr">Telefonnummmer</label><br>
+ 				<input type="tel" id="phone_nr" name="phone_nr" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" class="marging" autofocus> <br>
+				
+				<label for="email">Emailadresse</label><span class="klein">Pflichtfeld</span><br>
+  				<input type="email" id="email" name="email" pattern="[A-z0-9._%+-]+@+[A-z0-9._%+-].+[a-z]{0,40}" class="marging" required>
+				<br>
+				<p class="klein">Pflichtfeld</p>
+				<input type="checkbox" id="agb" name="agb" value="Einverständnis" class="anrede" required>
+  				<label for="agb">Ich bin mit den AGB einverstanden.</label><br>
+				<br>
+				<input type="submit" value="Play Now!" class="button1" name="button">
+			</form>
+	</div>
+    <div class="footer">impressum</div>
 </body>
 
 

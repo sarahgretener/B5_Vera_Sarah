@@ -1,1 +1,37 @@
+.header {
+  background-image: urL("../images/home.jpg");
+  height: 500px;
+}
+
+input {
+	border: none;
+	border-bottom:1px solid #084A6A;
+	margin-bottom: 25px;
+}
+.marging {
+		width: 85%;
+}
+
+select{
+	border: none;
+	border-bottom:1px solid #084A6A;
+	margin-bottom: 25px;
+}
+
+textarea{
+	border: none;
+	border:1px solid #084A6A;
+	height: 100px;
+	width: 70%;
+	margin-bottom: 25px;
+}
+
+#fname{
+	margin-right: 20px;
+}
+
+.klein{
+	font-size: 10px;
+	padding-left: 5px;
+}
 /* CSS Code, den es für die Start Page braucht */
