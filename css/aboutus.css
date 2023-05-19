@@ -1,0 +1,28 @@
+.personen {
+    height: 20rem;
+    background-size: 100%;
+    
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-item{
+    padding-top: 2rem;
+}
+
+@media screen and (min-width: 420px) {
+    .flex-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .flex-item{
+        padding-right: 5rem;
+    }
+}
