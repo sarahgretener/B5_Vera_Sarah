@@ -11,10 +11,31 @@
 color: #084A6A;
 font-family: 'Roboto Condensed', sans-serif;
 }
+h1{
+	font-size: 5rem;
+	font-weight: 700;
+}
+
+h2{
+	font-size: 5rem;
+	font-weight: 700;
+}
+
+h3{
+	font-size: 5rem;
+	font-weight: 700;
+}
+
+h4{
+	font-size: 5rem;
+	font-weight: 700;
+}
 
 .header {
-  background-image: urL("../images/home.png");
-  height: 500px;
+  background-image: urL("../images/home.jpg");
+  height:350px;
+	  background-repeat: no-repeat;
+  background-size: 200%;
 }
 
 .content {

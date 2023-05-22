@@ -1,7 +1,4 @@
-.header {
-  background-image: urL("../images/home.jpg");
-  height: 500px;
-}
+
 
 input {
 	border: none;
@@ -34,4 +31,6 @@ textarea{
 	font-size: 10px;
 	padding-left: 5px;
 }
+
+
 /* CSS Code, den es für die Start Page braucht */

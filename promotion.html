@@ -38,18 +38,18 @@
 						<input type="text" id="lname" name="last_name" pattern="[A-Z][a-z]{2, 29}" class="marging" required><br>
 					</div>
 				</div>
-					
-				<label for="child_name">Name Ihres Kindes</label><br>
-				<input type="text" id="child_name" name="child_name" pattern="[A-Z]{1}+[a-z]{2, 29}" class="marging"><br>
 				
 				<label for="phone_nr">Telefonnummmer</label><br>
  				<input type="tel" id="phone_nr" name="phone_nr" pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" class="marging" autofocus> <br>
 				
 				<label for="email">Emailadresse</label><span class="klein">Pflichtfeld</span><br>
   				<input type="email" id="email" name="email" pattern="[A-z0-9._%+-]+@+[A-z0-9._%+-].+[a-z]{0,40}" class="marging" required>
+				<br>				
+				<input type="checkbox" name="newsletter" value="Newsletter" class="anrede">
+  				<label for="agb">Ich möchte den Newsletter abonieren.</label>
 				<br>
 				<p class="klein">Pflichtfeld</p>
-				<input type="checkbox" id="agb" name="agb" value="Einverständnis" class="anrede" required>
+				<input type="checkbox"  name="agb" value="Einverständnis" class="anrede" required>
   				<label for="agb">Ich bin mit den AGB einverstanden.</label><br>
 				<br>
 				<input type="submit" value="Play Now!" class="button1" name="button">
