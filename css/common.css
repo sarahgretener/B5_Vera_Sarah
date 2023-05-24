@@ -11,23 +11,26 @@
 color: #084A6A;
 font-family: 'Roboto Condensed', sans-serif;
 }
+p{
+	font-size: 20 px;
+}
 h1{
-	font-size: 3rem;
+	font-size: 56 px;
 	font-weight: 700;
 }
 
 h2{
-	font-size: 3rem;
+	font-size: 43 px;
 	font-weight: 700;
 }
 
 h3{
-	font-size: 3rem;
+	font-size: 34 px;
 	font-weight: 700;
 }
 
 h4{
-	font-size: 3rem;
+	font-size: 26 px;
 	font-weight: 700;
 }
 
