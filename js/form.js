@@ -3,6 +3,9 @@ const formContainer = document.getElementById("formContainer");
 const thankYouContainer = document.getElementById("thankYouContainer");
 const submitButton = document.getElementById("submit");
 submitButton.disabled = true;
+const fnamefield = document.getElementById("fname");
+const lnamefield = document.getElementById("lname");
+const phone_nrfield = document.getElementById("phone_nr");
 const emailField = document.getElementById("email");
 
 // (2) Interaktionen festlegen
@@ -25,13 +28,16 @@ const onChangeEmailField = () => {
 const onClickSubmit = async () => {
   // Daten aus dem Formular für die Datenbank bereitstellen
   const data = {
-    group: "teacher", // SQL Gruppen Namen
-    pw: "02bd77f9", // SQL Passwort
-    tableName: "user", // Name der Tabelle in der SQL Datenbank
+    group: "b5", // SQL Gruppen Namen
+    pw: "554b6920", // SQL Passwort
+    tableName: "client", // Name der Tabelle in der SQL Datenbank
 
     columns: {
       // "email" Name der Spalte in der SQL Tabelle
       // "emailField.value" Eingabe des Benutzers aus dem Formularfeld
+      fname: fnamefield.value,
+      lname: lnamefield.value,
+      phone_nr: phone_nrfield.value,
       email: emailField.value,
     },
   };
