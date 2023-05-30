@@ -1,7 +1,7 @@
 // (1) Variablen initialisieren
 const formContainer = document.getElementById("formContainer");
 const thankYouContainer = document.getElementById("thankYouContainer");
-const submitButton = document.getElementById("submit");
+let submitButton = document.getElementById("submit");
 submitButton.disabled = true;
 const fnamefield = document.getElementById("fname");
 const lnamefield = document.getElementById("lname");
