@@ -45,6 +45,5 @@ const onClickSubmit = async () => {
   await databaseClient.insertInto(data);
 
   // Nach dem Speichern verschwindet das Formular, eine Dankeschön Nachricht erscheint
-  formContainer.classList.add("hidden");
-  thankYouContainer.classList.remove("hidden");
+  location.href ("https://sarahgretener.github.io/B5_Vera_Sarah/game.html")
 };
