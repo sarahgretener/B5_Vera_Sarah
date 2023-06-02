@@ -32,7 +32,8 @@ textarea{
 	padding-left: 5px;
 }
 .button1:disabled{
-	color:red;
+	color:white;
+	background-color:red;
 }
 
 /* CSS Code, den es für die Start Page braucht */
