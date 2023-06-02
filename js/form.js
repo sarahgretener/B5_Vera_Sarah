@@ -7,6 +7,7 @@ const fnamefield = document.getElementById("fname");
 const lnamefield = document.getElementById("lname");
 const phone_nrfield = document.getElementById("phone_nr");
 const emailField = document.getElementById("email");
+const agbField = document.getElementById("agb");
 
 // (2) Interaktionen festlegen
 emailField.addEventListener("keyup", () => {
@@ -28,6 +29,14 @@ const onChangeEmailField = () => {
 
 const onChangefnameField = () => {
   if (fnameField.value === "") {
+    submitButton.disabled = true;
+  } else {
+    submitButton.disabled = false;
+  }
+};
+
+const onChangeagbField = () => {
+  if (agbField.value === "") {
     submitButton.disabled = true;
   } else {
     submitButton.disabled = false;
