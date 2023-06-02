@@ -25,6 +25,24 @@ const onChangeEmailField = () => {
     submitButton.disabled = false;
   }
 };
+
+const onChangefnameField = () => {
+  if (fnameField.value === "") {
+    submitButton.disabled = true;
+  } else {
+    submitButton.disabled = false;
+  }
+};
+
+const onChangelnameField = () => {
+  if (lnameField.value === "") {
+    submitButton.disabled = true;
+  } else {
+    submitButton.disabled = false;
+  }
+};
+
+
 const onClickSubmit = async () => {
   // Daten aus dem Formular für die Datenbank bereitstellen
   const data = {
