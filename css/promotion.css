@@ -5,6 +5,7 @@ input {
 	border-bottom:1px solid #084A6A;
 	margin-bottom: 25px;
 }
+
 .marging {
 		width: 85%;
 }
@@ -23,9 +24,6 @@ textarea{
 	margin-bottom: 25px;
 }
 
-#fname{
-	margin-right: 20px;
-}
 
 .klein{
 	font-size: 10px;
@@ -35,5 +33,14 @@ textarea{
 	color:white;
 	background-color:red;
 }
+
+@media only screen and (min-width: 768px){
+	
+	.marging {
+		width: 50%;
+	}
+	
+}
+
 
 /* CSS Code, den es für die Start Page braucht */
