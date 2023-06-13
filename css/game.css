@@ -1,3 +1,21 @@
+body {
+	background: linear-gradient(-45deg, #BEDCEF, #EFDDCA, #C4D1D6, #F1F1E6);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 /* CSS Code, den es für die Promotion Page braucht */
 
 /* Hilfsklasse */
