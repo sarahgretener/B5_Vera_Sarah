@@ -74,6 +74,8 @@ ul {
   padding-right: 1rem;
   top: 0;
   right: 0;
+  border-style: dashed;
+  border-color: #E89B25;
 
 }
 
