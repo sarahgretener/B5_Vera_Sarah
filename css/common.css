@@ -70,6 +70,11 @@ padding: 20px;
 	font-size: 12pt;
 }
 
+.button1:hover{
+  background-color: white;
+  color: #E89B25;
+}
+
 ul {
   list-style-type: none;
   margin: auto;
