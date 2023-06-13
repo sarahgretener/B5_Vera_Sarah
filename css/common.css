@@ -69,7 +69,11 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-background-color: #5F86A5;
+  background-color: #5F86A5;
+  position: fixed;
+  padding-right: 1rem;
+  top: 0;
+
 }
 
 li {
