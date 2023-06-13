@@ -47,11 +47,17 @@ padding: 20px;
 }
 
 .footer {
-  height: 50px;
-	padding: 20px;
-	text-align: center;
-	margin-bottom: 10%;
-	margin-top: 4%;
+  background-image: url( 'footer.svg');
+  background-size: auto;
+  margin-top:5rem;
+
+}
+
+.footer-content {
+  text-align: center;
+	margin-bottom: 4rem;
+  color:white;
+  padding-top: 8rem;
 }
 
 .button1{
