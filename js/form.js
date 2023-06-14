@@ -80,3 +80,90 @@ const onClickSubmit = async () => {
 
 };
 
+
+
+
+
+
+
+
+
+// Wählt das Element mit der ID "submit" aus und weist es der Variable submitButton zu.
+
+const errorMessage = document.getElementById("errorMessage");
+
+// auch: input
+fnamefield.addEventListener("keyup", (event) => {
+  const formValue = fnamefield.value.trim();
+  if (formValue.length > 2) {
+    submitButton.disabled = false;
+    errorMessage.innerHTML = "";
+  } else {
+    submitButton.disabled = true;
+    errorMessage.innerHTML = "Der eingegebene Vorname ist zu kurz.";
+  }
+});
+
+
+
+// auch: input
+fnamefield.addEventListener("keyup", (event) => {
+  const formValue = lnameField.value.trim();
+  if (formValue.length > 1) {
+    submitButton.disabled = false;
+    errorMessage.innerHTML = "";
+  } else {
+    submitButton.disabled = true;
+    errorMessage.innerHTML = "Der eingegebene Nachname ist zu kurz.";
+  }
+});
+
+
+
+lnameField.addEventListener("keyup", (event) => {
+  const formValue = lnameField.value.trim();
+  if (formValue.length > 1) {
+    submitButton.disabled = false;
+    errorMessage.innerHTML = "";
+  } else {
+    submitButton.disabled = true;
+    errorMessage.innerHTML = "Der eingegebene Nachname ist zu kurz.";
+  }
+});
+
+
+emailField.addEventListener("keyup", (event) => {
+  const formValue = emailField.value.trim();
+  if (formValue.length > 3) {
+    submitButton.disabled = false;
+    errorMessage.innerHTML = "";
+  } else {
+    submitButton.disabled = true;
+    errorMessage.innerHTML = "Die Email ist zu kurz.";
+  }
+});
+
+
+phone_nrField.addEventListener("keyup", (event) => {
+  const formValue = phone_nrField.value.trim();
+  if (formValue.length > 9) {
+    submitButton.disabled = false;
+    errorMessage.innerHTML = "";
+  } else {
+    submitButton.disabled = true;
+    errorMessage.innerHTML = "Die Nummer ist zu kurz.";
+  }
+});
+
+agbField.addEventListener("keyup", (event) => {
+  const formValue = agbField.value.trim();
+  if (formValue == 1) {
+    submitButton.disabled = false;
+    errorMessage.innerHTML = "";
+  } else {
+    submitButton.disabled = true;
+    errorMessage.innerHTML = "Bitte akzeptiere die AGB's.";
+  }
+});
+
+
