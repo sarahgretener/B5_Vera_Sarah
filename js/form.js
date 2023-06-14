@@ -78,8 +78,9 @@ const onClickSubmit = async () => {
   await databaseClient.insertInto(data);
 
   // Nach dem Speichern verschwindet das Formular, eine Dankeschön Nachricht erscheint
-  
-};
+  formContainer.classList.add("hidden");
+  gameContainer.classList.remove("hidden");
+
 };
 
 const dino = document.getElementById("game-dino");
