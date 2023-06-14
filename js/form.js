@@ -11,10 +11,7 @@ const emailField = document.getElementById("email");
 const agbField = document.getElementById("agb");
 
 
-gotogame(){
-   formContainer.classList.add("hidden");
-  gameContainer.classList.remove("hidden");
-}
+
 // (2) Interaktionen festlegen
 emailField.addEventListener("keyup", () => {
   onChangeEmailField();
