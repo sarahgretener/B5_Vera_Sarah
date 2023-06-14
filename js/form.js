@@ -11,10 +11,7 @@ const emailField = document.getElementById("email");
 const agbField = document.getElementById("agb");
 
 
-const error = document.getElementById("error");
 
-if (submitButton.disabled = true){
-  error.innerHTML = "Bitte fülle das Formular aus."}
 
 
 
@@ -158,6 +155,9 @@ const onClickSubmit = async () => {
 
 // Wählt das Element mit der ID "submit" aus und weist es der Variable submitButton zu.
 
+const error = document.getElementById("error");
 
+if (submitButton.disabled = true){
+  error.innerHTML = "Bitte fülle das Formular aus."}
 
 
