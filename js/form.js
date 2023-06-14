@@ -43,7 +43,7 @@ const errorMessage4 = document.getElementById("errorMessage4");
 fnamefield.addEventListener("keyup", (event) => {
   const formValue = fnamefield.value.trim();
   if (formValue.length > 2) {
-    submitButton.disabled = false;
+   
     errorMessage1.innerHTML = "";
   } else {
     submitButton.disabled = true;
@@ -57,7 +57,7 @@ fnamefield.addEventListener("keyup", (event) => {
 lnamefield.addEventListener("keyup", (event) => {
   const formValue = lnamefield.value.trim();
   if (formValue.length > 2) {
-    submitButton.disabled = false;
+    
     errorMessage2.innerHTML = "";
   } else {
     submitButton.disabled = true;
