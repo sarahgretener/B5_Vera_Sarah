@@ -78,8 +78,8 @@ emailField.addEventListener("keyup", (event) => {
 
 
 agbField.addEventListener("keyup", (event) => {
-  const formValue = agbField.value.trim();
-  if (formValue == true) {
+  const formValue = agbField.checked;
+  if (formValue = true) {
 
     errorMessage4.innerHTML = "";
   } else {
@@ -107,7 +107,7 @@ const onChangefnameField = () => {
 };
 
 const onChangeagbField = () => {
-  if (agbField.value === false) {
+  if (agbField.checked = false) {
     submitButton.disabled = true;
   } else {
     submitButton.disabled = false;
