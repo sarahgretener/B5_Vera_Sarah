@@ -8,7 +8,6 @@ const fnamefield = document.getElementById("fname");
 const lnamefield = document.getElementById("lname");
 const phone_nrfield = document.getElementById("phone_nr");
 const emailField = document.getElementById("email");
-const agbField = document.getElementById("agb");
 
 
 
@@ -39,7 +38,6 @@ else {
 const errorMessage1 = document.getElementById("errorMessage1");
 const errorMessage2 = document.getElementById("errorMessage2");
 const errorMessage3 = document.getElementById("errorMessage3");
-const errorMessage4 = document.getElementById("errorMessage4");
 
 // auch: input
 fnamefield.addEventListener("keyup", (event) => {
