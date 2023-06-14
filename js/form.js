@@ -117,7 +117,7 @@ fnamefield.addEventListener("keyup", (event) => {
 
 // auch: input
 lnamefield.addEventListener("keyup", (event) => {
-  const formValue = lnameField.value.trim();
+  const formValue = lnamefield.value.trim();
   if (formValue.length > 1) {
     submitButton.disabled = false;
     errorMessage2.innerHTML = "";
