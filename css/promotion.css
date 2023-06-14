@@ -1,4 +1,7 @@
-
+.errorMassages{
+	color: #084A6A;
+	font-style: bold;
+}
 input {
 	border: none;
 	border-bottom:1px solid #084A6A;
