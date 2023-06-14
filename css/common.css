@@ -46,7 +46,19 @@ h4{
 padding: 20px;
 }
 
+.footer {
+  background-image: url("../images/footer.svg");
+  background-size: auto;
+  margin-top:5rem;
 
+}
+
+.footer-content {
+  text-align: center;
+  margin-bottom: 4rem;
+  color:white;
+  padding-top: 7rem;
+}
 
 .button1{
   background-color: #E89B25;
