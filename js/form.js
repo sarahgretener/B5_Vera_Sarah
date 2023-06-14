@@ -97,37 +97,7 @@ agbField.addEventListener("keyup", (event) => {
 
 
 // (3) Interaktionen Code
-const onChangeEmailField = () => {
-  if (emailField.value === "") {
-    submitButton.disabled = true;
-  } else {
-    submitButton.disabled = false;
-  }
-};
 
-const onChangefnameField = () => {
-  if (fnameField.value === "") {
-    submitButton.disabled = true;
-  } else {
-    submitButton.disabled = false;
-  }
-};
-
-const onChangeagbField = () => {
-  if (agbField.checked = false) {
-    submitButton.disabled = true;
-  } else {
-    submitButton.disabled = false;
-  }
-};
-
-const onChangelnameField = () => {
-  if (lnameField.value === "") {
-    submitButton.disabled = true;
-  } else {
-    submitButton.disabled = false;
-  }
-};
 
 
 const onClickSubmit = async () => {
