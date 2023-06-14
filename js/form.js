@@ -81,6 +81,15 @@ emailField.addEventListener("keyup", (event) => {
   }
 });
 
+if(document.getElementById("agb").checked = true){
+    submitButton.disabled = false;
+    errorMessage4.innerHTML = "";
+  } else {
+    submitButton.disabled = true;
+    errorMessage4.innerHTML = "lol";
+  }
+  
+
 
 
 
