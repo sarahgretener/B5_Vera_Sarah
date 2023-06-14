@@ -31,6 +31,8 @@ const error = document.getElementById("error");
 
 if (submitButton.disabled = true){
   error.innerHTML = "Bitte fülle das Formular aus."}
+else {
+  error.innerHTML = ""}
 
 
 
@@ -67,9 +69,6 @@ lnamefield.addEventListener("keyup", (event) => {
 
 
 
-
-
-
 emailField.addEventListener("keyup", (event) => {
   const formValue = emailField.value.trim();
   if (formValue.length > 3) {
@@ -81,18 +80,7 @@ emailField.addEventListener("keyup", (event) => {
   }
 });
 
-if(document.getElementById("agb").checked = true){
-    submitButton.disabled = false;
-    errorMessage4.innerHTML = "";
-  } else {
-    submitButton.disabled = true;
-    errorMessage4.innerHTML = "lol";
-  }
   
-
-
-
-
 
 
 // (3) Interaktionen Code
