@@ -84,16 +84,6 @@ emailField.addEventListener("keyup", (event) => {
 
 
 
-agbField.addEventListener("keyup", (event) => {
-  const formValue = agbField.checked;
-  if (formValue = true) {
-    submitButton.disabled = false;
-    errorMessage4.innerHTML = "";
-  } else {
-    submitButton.disabled = true;
-    errorMessage4.innerHTML = "Bitte akzeptiere die AGB's.";
-  }
-});
 
 
 // (3) Interaktionen Code
