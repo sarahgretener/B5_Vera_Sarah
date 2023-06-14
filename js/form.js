@@ -142,7 +142,7 @@ emailField.addEventListener("keyup", (event) => {
 
 agbField.addEventListener("keyup", (event) => {
   const formValue = agbField.value.trim();
-  if (formValue == 1) {
+  if (formValue == true) {
     submitButton.disabled = false;
     errorMessage4.innerHTML = "";
   } else {
