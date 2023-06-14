@@ -50,14 +50,17 @@ padding: 20px;
   background-image: url("../images/footer.svg");
   background-size: auto;
   margin-top:5rem;
+  background-repeat: repeat-x;
+	
 
 }
 
 .footer-content {
   text-align: center;
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
   color:white;
-  padding-top: 7rem;
+  margin-top: 7rem;
+	background-color: #E89B25;
 }
 
 .button1{
