@@ -74,6 +74,8 @@ emailField.addEventListener("keyup", (event) => {
   if (formValue.length > 3) {
     submitButton.disabled = false;
     errorMessage3.innerHTML = "";
+    error.innerHTML = "";
+
   } else {
     submitButton.disabled = true;
     errorMessage3.innerHTML = "Die Email ist zu kurz.";
