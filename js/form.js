@@ -107,7 +107,7 @@ const onChangefnameField = () => {
 };
 
 const onChangeagbField = () => {
-  if (agbField.value === "") {
+  if (agbField.value === false) {
     submitButton.disabled = true;
   } else {
     submitButton.disabled = false;
