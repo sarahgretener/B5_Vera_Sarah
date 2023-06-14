@@ -110,7 +110,7 @@ fnamefield.addEventListener("keyup", (event) => {
 
 
 // auch: input
-fnamefield.addEventListener("keyup", (event) => {
+lnamefield.addEventListener("keyup", (event) => {
   const formValue = lnameField.value.trim();
   if (formValue.length > 1) {
     submitButton.disabled = false;
@@ -152,3 +152,7 @@ agbField.addEventListener("keyup", (event) => {
 });
 
 
+const error = document.getElementById("error");
+
+if (submitButton.disabled = true){
+  error.innerHTML = "Bitte fülle das Formular aus."}
