@@ -105,7 +105,7 @@ const errorMessage4 = document.getElementById("errorMessage4");
 fnamefield.addEventListener("keyup", (event) => {
   const formValue = fnamefield.value.trim();
   if (formValue.length > 2) {
-    submitButton.disabled = false;
+    
     errorMessage1.innerHTML = "";
   } else {
     submitButton.disabled = true;
@@ -118,8 +118,8 @@ fnamefield.addEventListener("keyup", (event) => {
 // auch: input
 lnamefield.addEventListener("keyup", (event) => {
   const formValue = lnamefield.value.trim();
-  if (formValue.length > 1) {
-    submitButton.disabled = false;
+  if (formValue.length > 2) {
+    
     errorMessage2.innerHTML = "";
   } else {
     submitButton.disabled = true;
@@ -135,7 +135,7 @@ lnamefield.addEventListener("keyup", (event) => {
 emailField.addEventListener("keyup", (event) => {
   const formValue = emailField.value.trim();
   if (formValue.length > 3) {
-    submitButton.disabled = false;
+    
     errorMessage3.innerHTML = "";
   } else {
     submitButton.disabled = true;
