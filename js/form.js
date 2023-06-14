@@ -11,6 +11,12 @@ const emailField = document.getElementById("email");
 const agbField = document.getElementById("agb");
 
 
+const error = document.getElementById("error");
+
+if (submitButton.disabled = true){
+  error.innerHTML = "Bitte fülle das Formular aus."}
+
+
 
 // (2) Interaktionen festlegen
 emailField.addEventListener("keyup", () => {
@@ -152,7 +158,4 @@ agbField.addEventListener("keyup", (event) => {
 });
 
 
-const error = document.getElementById("error");
 
-if (submitButton.disabled = true){
-  error.innerHTML = "Bitte fülle das Formular aus."}
