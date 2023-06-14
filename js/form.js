@@ -90,17 +90,20 @@ const onClickSubmit = async () => {
 
 // Wählt das Element mit der ID "submit" aus und weist es der Variable submitButton zu.
 
-const errorMessage = document.getElementById("errorMessage");
+const errorMessage1 = document.getElementById("errorMessage1");
+const errorMessage2 = document.getElementById("errorMessage2");
+const errorMessage3 = document.getElementById("errorMessage3");
+const errorMessage4 = document.getElementById("errorMessage4");
 
 // auch: input
 fnamefield.addEventListener("keyup", (event) => {
   const formValue = fnamefield.value.trim();
   if (formValue.length > 2) {
     submitButton.disabled = false;
-    errorMessage.innerHTML = "";
+    errorMessage1.innerHTML = "";
   } else {
     submitButton.disabled = true;
-    errorMessage.innerHTML = "Der eingegebene Vorname ist zu kurz.";
+    errorMessage1.innerHTML = "Der eingegebene Vorname ist zu kurz.";
   }
 });
 
@@ -111,58 +114,40 @@ fnamefield.addEventListener("keyup", (event) => {
   const formValue = lnameField.value.trim();
   if (formValue.length > 1) {
     submitButton.disabled = false;
-    errorMessage.innerHTML = "";
+    errorMessage2.innerHTML = "";
   } else {
     submitButton.disabled = true;
-    errorMessage.innerHTML = "Der eingegebene Nachname ist zu kurz.";
+    errorMessage2.innerHTML = "Der eingegebene Nachname ist zu kurz.";
   }
 });
 
 
 
-lnameField.addEventListener("keyup", (event) => {
-  const formValue = lnameField.value.trim();
-  if (formValue.length > 1) {
-    submitButton.disabled = false;
-    errorMessage.innerHTML = "";
-  } else {
-    submitButton.disabled = true;
-    errorMessage.innerHTML = "Der eingegebene Nachname ist zu kurz.";
-  }
-});
+
 
 
 emailField.addEventListener("keyup", (event) => {
   const formValue = emailField.value.trim();
   if (formValue.length > 3) {
     submitButton.disabled = false;
-    errorMessage.innerHTML = "";
+    errorMessage3.innerHTML = "";
   } else {
     submitButton.disabled = true;
-    errorMessage.innerHTML = "Die Email ist zu kurz.";
+    errorMessage3.innerHTML = "Die Email ist zu kurz.";
   }
 });
 
 
-phone_nrField.addEventListener("keyup", (event) => {
-  const formValue = phone_nrField.value.trim();
-  if (formValue.length > 9) {
-    submitButton.disabled = false;
-    errorMessage.innerHTML = "";
-  } else {
-    submitButton.disabled = true;
-    errorMessage.innerHTML = "Die Nummer ist zu kurz.";
-  }
-});
+
 
 agbField.addEventListener("keyup", (event) => {
   const formValue = agbField.value.trim();
   if (formValue == 1) {
     submitButton.disabled = false;
-    errorMessage.innerHTML = "";
+    errorMessage4.innerHTML = "";
   } else {
     submitButton.disabled = true;
-    errorMessage.innerHTML = "Bitte akzeptiere die AGB's.";
+    errorMessage4.innerHTML = "Bitte akzeptiere die AGB's.";
   }
 });
 
