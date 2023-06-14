@@ -27,6 +27,68 @@ submitButton.addEventListener("click", async (event) => {
   onClickSubmit();
 });
 
+const errorMessage1 = document.getElementById("errorMessage1");
+const errorMessage2 = document.getElementById("errorMessage2");
+const errorMessage3 = document.getElementById("errorMessage3");
+const errorMessage4 = document.getElementById("errorMessage4");
+
+// auch: input
+fnamefield.addEventListener("keyup", (event) => {
+  const formValue = fnamefield.value.trim();
+  if (formValue.length > 2) {
+    
+    errorMessage1.innerHTML = "";
+  } else {
+    submitButton.disabled = true;
+    errorMessage1.innerHTML = "Der eingegebene Vorname ist zu kurz.";
+  }
+});
+
+
+
+// auch: input
+lnamefield.addEventListener("keyup", (event) => {
+  const formValue = lnamefield.value.trim();
+  if (formValue.length > 2) {
+    
+    errorMessage2.innerHTML = "";
+  } else {
+    submitButton.disabled = true;
+    errorMessage2.innerHTML = "Der eingegebene Nachname ist zu kurz.";
+  }
+});
+
+
+
+
+
+
+emailField.addEventListener("keyup", (event) => {
+  const formValue = emailField.value.trim();
+  if (formValue.length > 3) {
+    
+    errorMessage3.innerHTML = "";
+  } else {
+    submitButton.disabled = true;
+    errorMessage3.innerHTML = "Die Email ist zu kurz.";
+  }
+});
+
+
+
+
+agbField.addEventListener("keyup", (event) => {
+  const formValue = agbField.value.trim();
+  if (formValue == true) {
+
+    errorMessage4.innerHTML = "";
+  } else {
+    submitButton.disabled = true;
+    errorMessage4.innerHTML = "Bitte akzeptiere die AGB's.";
+  }
+});
+
+
 // (3) Interaktionen Code
 const onChangeEmailField = () => {
   if (emailField.value === "") {
@@ -96,66 +158,6 @@ const onClickSubmit = async () => {
 
 // Wählt das Element mit der ID "submit" aus und weist es der Variable submitButton zu.
 
-const errorMessage1 = document.getElementById("errorMessage1");
-const errorMessage2 = document.getElementById("errorMessage2");
-const errorMessage3 = document.getElementById("errorMessage3");
-const errorMessage4 = document.getElementById("errorMessage4");
-
-// auch: input
-fnamefield.addEventListener("keyup", (event) => {
-  const formValue = fnamefield.value.trim();
-  if (formValue.length > 2) {
-    
-    errorMessage1.innerHTML = "";
-  } else {
-    submitButton.disabled = true;
-    errorMessage1.innerHTML = "Der eingegebene Vorname ist zu kurz.";
-  }
-});
-
-
-
-// auch: input
-lnamefield.addEventListener("keyup", (event) => {
-  const formValue = lnamefield.value.trim();
-  if (formValue.length > 2) {
-    
-    errorMessage2.innerHTML = "";
-  } else {
-    submitButton.disabled = true;
-    errorMessage2.innerHTML = "Der eingegebene Nachname ist zu kurz.";
-  }
-});
-
-
-
-
-
-
-emailField.addEventListener("keyup", (event) => {
-  const formValue = emailField.value.trim();
-  if (formValue.length > 3) {
-    
-    errorMessage3.innerHTML = "";
-  } else {
-    submitButton.disabled = true;
-    errorMessage3.innerHTML = "Die Email ist zu kurz.";
-  }
-});
-
-
-
-
-agbField.addEventListener("keyup", (event) => {
-  const formValue = agbField.value.trim();
-  if (formValue == true) {
-    submitButton.disabled = false;
-    errorMessage4.innerHTML = "";
-  } else {
-    submitButton.disabled = true;
-    errorMessage4.innerHTML = "Bitte akzeptiere die AGB's.";
-  }
-});
 
 
 
