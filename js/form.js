@@ -73,7 +73,7 @@ lnamefield.addEventListener("keyup", (event) => {
 emailField.addEventListener("keyup", (event) => {
   const formValue = emailField.value.trim();
   if (formValue.length > 3) {
-    submitButton.disabled = false;
+    
     errorMessage3.innerHTML = "";
   } else {
     submitButton.disabled = true;
