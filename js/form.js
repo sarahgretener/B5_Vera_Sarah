@@ -10,6 +10,11 @@ const phone_nrfield = document.getElementById("phone_nr");
 const emailField = document.getElementById("email");
 const agbField = document.getElementById("agb");
 
+
+gotogame(){
+   formContainer.classList.add("hidden");
+  gameContainer.classList.remove("hidden");
+}
 // (2) Interaktionen festlegen
 emailField.addEventListener("keyup", () => {
   onChangeEmailField();
@@ -73,8 +78,7 @@ const onClickSubmit = async () => {
   await databaseClient.insertInto(data);
 
   // Nach dem Speichern verschwindet das Formular, eine Dankeschön Nachricht erscheint
-   formContainer.classList.add("hidden");
-  gameContainer.classList.remove("hidden");
+  
 };
 };
 
