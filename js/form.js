@@ -24,6 +24,16 @@ submitButton.addEventListener("click", async (event) => {
   onClickSubmit();
 });
 
+
+
+
+const error = document.getElementById("error");
+
+if (submitButton.disabled = true){
+  error.innerHTML = "Bitte fülle das Formular aus."}
+
+
+
 const errorMessage1 = document.getElementById("errorMessage1");
 const errorMessage2 = document.getElementById("errorMessage2");
 const errorMessage3 = document.getElementById("errorMessage3");
@@ -155,9 +165,6 @@ const onClickSubmit = async () => {
 
 // Wählt das Element mit der ID "submit" aus und weist es der Variable submitButton zu.
 
-const error = document.getElementById("error");
 
-if (submitButton.disabled = true){
-  error.innerHTML = "Bitte fülle das Formular aus."}
 
 
