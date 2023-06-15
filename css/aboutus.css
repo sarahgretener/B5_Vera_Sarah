@@ -1,5 +1,5 @@
 .personen {
-    height: 15rem;
+    height: 20rem;
     background-size: 100%;
     
 }
@@ -19,7 +19,12 @@
 
 
 @media screen and (min-width: 900px) {
-    .flex-container{
+   .personen {
+    height: 15rem;
+    background-size: 100%;
+    
+}
+	.flex-container{
         display: flex;
         justify-content: center;
         align-items: center;
